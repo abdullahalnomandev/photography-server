@@ -118,6 +118,5 @@ client.connect(err => {
 
 
 
-app.listen(port, () => {
-    console.log("listening on port " + port)
+app.listen(port || process.env.PORT)
 })
